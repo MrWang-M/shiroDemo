@@ -34,7 +34,7 @@ public class MyRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = (String)principalCollection.iterator().next();
 
-        //测试1111
+        //测试
 
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         info.setRoles(roleDAO.queryRolesByUserName(username));
